@@ -16,21 +16,24 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-    font-size: 100%;
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
     font: inherit;
     font-family: 'Roboto', sans-serif;
-	vertical-align: baseline;
+	  vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	  display: block;
 }
 body {
-	line-height: 1;
+    line-height: 62.5%;
 }
 ol, ul {
 	list-style: none;
@@ -48,6 +51,19 @@ table {
 	border-spacing: 0;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #666666;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -58,45 +74,61 @@ table {
 
 .card {
     display: flex;
-    /* font-size: $card-font-size; */
     font-weight: 400;
     overflow: hidden;
-    width: 560px;
-    /* z-index: $card-z-index; */
+    width: 56rem;
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: 0px 20px 40px #00000065;
     opacity: 1;
-    margin: 12px 0px;
-    padding: 24px;
+    margin: 1.2rem 0rem;
+    padding: 2.4rem;
   }
 
 .card1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    min-height: 1.2rem;
+}
+
+.card1__circle {
+    flex-shrink: 0;
+    border-radius: 50%;
+    height: 7.2rem;
+    width: 7.2rem;
+    margin-right: 2.4rem;
+}
+
+.card1__header {
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card2 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 264px;
+    min-height: 26.4rem;
 }
 
-.card__image {
-    height: 160px;
-    width: 512px;
+.card2__image {
+    height: 16rem;
+    width: 51.2rem;
     overflow: hidden;
-    /* width: 100%; */
 }
 
-.circle {
-    border-radius: 50%;
-    height: 72px;
-    width: 72px;
+.button-container {
+    height: 4.8rem;
+    width: 51.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 button {
@@ -104,23 +136,16 @@ button {
     border-radius: 3px;
     opacity: 1;
     font-family: inherit;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 700;
     line-height: 1.15;
-    margin-left: 12px;
-    height: 32px;
+    margin-left: 1.2rem;
     text-transform: none;
     border-style: none;
-    padding: 8px 16px;
+    padding: 0.8rem 1.6rem;
 }
-
-.button_container {
-    height: 48px;
-    width: 512px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+button:hover {
+    cursor: pointer;
 }
 
 .red {
@@ -129,6 +154,6 @@ button {
 }
 
 .material-icons.md-36 {
-    font-size: 32px;
-    color: #222222;
+    font-size: 3.2rem;
+    color: #666666;
 }
