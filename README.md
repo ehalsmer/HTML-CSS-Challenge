@@ -1,4 +1,4 @@
-# HTML/CSS Derivita Challenge
+# HTML/CSS Challenge
 
 ## Instructions:
 * Write HTML and CSS to implement the design specification (https://xd.adobe.com/spec/04af9ee7-b732-4532-66df-fd5051b61d9b-729e/)
